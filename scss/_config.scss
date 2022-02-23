@@ -1,0 +1,22 @@
+@import './variable_and_mixins/mixins';
+@import './variable_and_mixins/variables';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+    cursor: unset;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: $dark-text-color;
+}
+
+body{
+    background-color: $light-grey-color;
+    // overflow-x: hidden;
+}

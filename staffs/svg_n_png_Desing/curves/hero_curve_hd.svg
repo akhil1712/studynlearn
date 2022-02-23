@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="3393px" height="2342px" viewBox="0 0 3393 2342" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.6478065" y1="0.50000036" x2="0.8820689" y2="9.2123025E-07" id="gradient_1">
+      <stop offset="0%" stop-color="#FFC107" />
+      <stop offset="100%" stop-color="#FFEB3B" />
+    </linearGradient>
+    <radialGradient gradientUnits="objectBoundingBox" cx="11.387467%" cy="70.384636%" fx="11.387467%" fy="70.384636%" r="74.498245%" gradientTransform="translate(0.113874674,0.7038464),scale(0.8727336,1),rotate(-40.565037),translate(-0.113874674,-0.7038464)" id="gradient_2">
+      <stop offset="0%" stop-color="#FFEB3B" />
+      <stop offset="100%" stop-color="#FFC107" />
+    </radialGradient>
+  </defs>
+  <g id="Group-Copy">
+    <path d="M3392.77 1083.74C3392.77 545.063 2956.09 108.381 2417.42 108.38C1878.75 108.379 1442.06 545.058 1442.06 1083.73C1442.06 1622.4 1878.74 2059.09 2417.42 2059.09C2956.09 2059.09 3392.77 1622.41 3392.77 1083.74Z" id="Ellipse" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M2683.42 1170.96C2683.43 524.261 1817.66 0.00441886 1170.96 0.0026894C524.26 0.00144822 0.00488281 524.255 0.00268555 1170.96C0.00195313 1817.66 524.254 2341.91 1170.96 2341.91C1817.66 2341.92 2683.42 1817.66 2683.42 1170.96Z" id="Ellipse-Copy" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

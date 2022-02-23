@@ -1,0 +1,113 @@
+// Color-pallate// Color-pallate// Color-pallate// Color-pallate
+// Color-pallate// Color-pallate// Color-pallate// Color-pallate
+
+//  Main-Color-Group    #   #   #
+$dark-yellow-color  :#FFC107;
+$chrome-yellow-color  :#FDD20A;
+$light-yellow-color :#FFEB3B;
+$dark-blue-color    :#0A66A5;
+$chrome-blue-color    :#0099ff;
+$light-blue-color   :#03A6F5;
+
+$light-grey-color         :#fafafa;
+$dark-grey-color         :#0f0f0f;
+
+$dark-text-color    :#000000;
+$light-text-color   :#ffffff;
+
+//    #    #    #    #    #    #    #    #    #    #    #    #    //
+
+//font-sizes//font-sizes//font-sizes//font-sizes//font-sizes//font-sizes
+
+$font-size:(
+    "zero"          :   0rem,
+    "px"            :   0.0625rem,//1px
+    "micro"         :   0.125rem,//2px
+    "mini"          :   0.3125rem,//5px
+    "tiny"          :   0.625rem,//10px
+    "very-small"    :   0.75rem,//12px
+    "small"         :   0.875rem,//14px
+    "regular"       :   1rem,//16px
+    "medium"        :   1.125rem,//18px
+    "large"         :   1.5rem,//24px
+    "xl"            :   2rem,//32px
+    "xxl"           :   2.25rem,//36px
+    "xxxl"          :   3rem,//48px
+    "huge"          :   4rem,//64px
+    "gaint"         :   4.5rem,//72px
+);
+//    #    #    #    #    #    #    #    #    #    #    #    #    //
+
+//#    rem-size    #    rem-size    #    rem-size    #    rem-size    #
+$rem-size:(
+    "zero"          :   0rem,
+    "px"            :   0.0625rem,//1px
+    "micro"         :   0.125rem,//2px
+    "mini"          :   0.3125rem,//5px
+    "tiny"          :   0.625rem,//10px
+    "very-small"    :   0.75rem,//12px
+    "small"         :   0.875rem,//14px
+    "regular"       :   1rem,//16px>>>>>>>>>>>>>>>>>>>>>>
+    "medium"        :   1.5rem,//24px
+    "large"         :   2rem,//32px
+    "xl"            :   2.5rem,//40px
+    "xxl"           :   3rem,//48px
+    "xxxl"          :   4rem,//64px
+    "xxxxl"         :   4.5rem,//72px
+    "huge"          :   5rem,//80px
+    "gaint"         :   6.25rem,//100px
+    "super-gaint"   :   9.3rem,//150px
+);
+//    #    #    #    #    #    #    #    #    #    #    #    #    //
+
+// @mixin flex {
+//     .df{
+//         display: flex;
+//     &-jc{
+//         &-sb{
+//             justify-content: space-between;
+//         }
+//         &-sa{
+//             justify-content: space-around;
+//         }
+//         &-se{
+//             justify-content: space-evenly;
+//         }
+//         &-ai{
+//             &-c{
+//                 align-items: center;
+//             }
+//         }
+//     }
+//     }
+// }
+
+
+// Incomplete Task ?    ?   ?
+
+$text-font: sans-serif;
+$heading-font: monospace;
+$uniq-font: sans-serif;
+
+// $margin: (
+//     "micro"         : 0.1rem,
+//     "tiny"          : 0.25rem,
+//     "very-small"    : 0.5rem,
+//     "small"         : 0.75rem,
+//     "regular"       : 1rem,
+//     "medium"        : 1.5rem,
+//     "large"         : 2rem,
+//     "extra-large"   : 3rem,
+//     "huge"          : 5rem,
+// );
+// $padding: (
+//     "micro"         : 0.1rem,
+//     "tiny"          : 0.25rem,
+//     "very-small"    : 0.5rem,
+//     "small"         : 0.75rem,
+//     "regular"       : 1rem,
+//     "medium"        : 1.5rem,
+//     "large"         : 2rem,
+//     "extra-large"   : 3rem,
+//     "huge"          : 5rem,
+// );

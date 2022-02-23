@@ -1,0 +1,212 @@
+@import '../variable_and_mixins/variables';
+@import '../variable_and_mixins/mixins';
+
+@function size($size-name){
+    @return map-get($rem-size , $size-name);
+}
+
+@function font($size-name){
+    @return map-get($font-size , $size-name);
+}
+
+.top-curve{
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    width: 100%;
+    @include hd-desktop-breakpoint-start{
+        display: grid;
+        place-items: center;
+    }
+    img{
+        position: relative;
+        width: 150vw;
+        top: -12rem;
+        left: -7rem;
+        @include breakpoint-min(450px){
+            top: -20rem;
+        }
+        @include mobile-flip-breakpoint-start{
+            width:110vw;
+            top: -18rem;
+            left: -2rem;
+        }
+        @include breakpoint-min(700px){
+            display: none;
+            top: -20rem;
+        }
+        @include tablet-breakpoint-start{
+            width:100%;
+            top: -25rem;
+            left: 3rem;
+        }
+        @include breakpoint-min(700px){
+            top: -30rem;
+        }
+        @include breakpoint-min(1240px){
+            top: -40rem;
+        }
+        @include desktop-breakpoint-start{
+        top: -45rem;
+        }
+        @include breakpoint-min(1640px){
+            top: -50rem;
+        }
+        @include hd-desktop-breakpoint-start{
+                                            // work has been to done in hd
+            // margin: 0 auto;
+            top: 1vw;
+            left: -5rem;
+            width: 100%;
+            // display: none;
+        }
+    }
+}
+.hero{
+    position: relative;
+    padding: 4vmin 0;
+    &-box{//outline-style: solid;
+        padding: 5vmin;
+        margin: 0 auto;
+        width: 90vw;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        place-items: center;
+
+        @include mobile-flip-breakpoint-start{
+            grid-template-columns: repeat(3,33.33%);
+            grid-template-rows: repeat(2, 150px);
+        }
+        @include laptop-breakpoint-start{
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 150px 150px 50px;
+        }
+        @include desktop-breakpoint-start{
+        padding: 6rem;
+        max-width: 1440px;
+        }
+        &-heading{
+            padding-bottom: size(regular);
+            text-transform: capitalize;
+            text-align: center;
+
+            font-weight: 500;
+            font-size: 5vw;
+            
+            @include mobile-flip-breakpoint-start{
+                font-size: 3vw;
+                text-align: left;
+                grid-column: 1/3;
+                grid-row: 1/2;
+                justify-self: start;
+                align-self: end;
+            }
+            @include tablet-breakpoint-start{
+            }
+            @include laptop-breakpoint-start{
+                font-size: 2rem;
+                grid-column: 1/3;
+                grid-row: 1/3;
+                justify-self: start;
+                align-self: center;
+            }
+            @include desktop-breakpoint-start{}
+        }
+        &-image{
+            padding-bottom: size(regular);
+            @include mobile-flip-breakpoint-start{
+                grid-column: 3/4;
+                grid-row: 1/3;
+                justify-self: end;
+            }
+            // @include tablet-breakpoint-start{
+
+            // }
+
+            @include laptop-breakpoint-start{
+                grid-column: 3/5;
+                grid-row: 1/4;
+                justify-self: end;
+                align-self: start;
+            }
+
+            picture{
+                img{
+                    width: 80vw;
+                    @include mobile-flip-breakpoint-start{
+                        width: 50vw;
+                    }
+                    @include tablet-breakpoint-start{
+                    }
+                    @include laptop-breakpoint-start{
+                        width: 45vw;
+                    }
+                    @include desktop-breakpoint-start{
+                        max-width: 600px;
+                    }
+                }
+            }
+        }
+        &-btn{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: size(mini);
+            font-size: 2vmax;
+            width: 15rem;
+            @include breakpoint-max(349px){
+                font-size: 5vw;
+            }
+
+            @include mobile-flip-breakpoint-start{
+                // width: 7.8125rem;
+                width: max-content;
+                font-size: 2vw;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                justify-self: start;
+                align-self: start;
+            }
+            @include laptop-breakpoint-start{
+                padding-bottom: 1rem;
+                font-size: 1.5vw;
+                flex-direction: row;
+                grid-column: 1/3;
+                grid-row: 2/3;
+                justify-self: start;
+                align-self: end;
+            }
+            @include desktop-breakpoint-start{
+                font-size: 1.6rem;
+            }
+            a{
+                min-width: max -content;
+                height: fit-content;
+                text-align: center;
+                text-decoration: none;
+
+                padding: size(mini) size(very-small);
+                border-radius: font(very-small) ;
+
+                @include mobile-flip-breakpoint-start{
+                    padding: size(mini) size(tiny);
+                }
+                @include tablet-breakpoint-start{
+                    padding: size(mini) size(small);
+                }
+            }
+
+            &-free-live-class{
+                background-color: $dark-blue-color;
+                color: $light-grey-color;
+                border: solid 1px transparent;
+                            }
+            &-book-demo-class{
+                background-color: $light-grey-color;
+                color: $dark-text-color;
+                border: solid 1px $dark-blue-color;
+            }
+        }
+    }
+}

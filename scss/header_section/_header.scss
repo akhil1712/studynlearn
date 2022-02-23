@@ -1,0 +1,185 @@
+@import '../variable_and_mixins/variables';
+@import '../variable_and_mixins/mixins';
+
+@import './burgermenu';
+
+@function size($size-name){
+    @return map-get($rem-size , $size-name);
+}
+
+@function font($size-name){
+    @return map-get($font-size , $size-name);
+}
+
+.light-bg{
+    background-color: $light-grey-color;
+}
+.header-sticky{
+    position: sticky;
+    top: 0rem;
+    background: $chrome-yellow-color;
+}
+header{
+    transition: ease 500ms;
+    z-index: 1;
+    @include laptop-breakpoint-start{
+        position: sticky;
+        top: 0rem;
+    }
+    .header{
+        // background-color: transparent;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: size(regular);
+        @include breakpoint-min(){
+            padding: size(regular);
+        }
+        @include tablet-breakpoint-start{
+            padding: size(medium) size(xl); 
+        }
+        @include desktop-breakpoint-start{
+            padding: size(xl) size(xl);
+            margin: 0 auto;
+            width: 90rem;
+        }
+        @include hd-desktop-breakpoint-start{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-nav{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-logo{
+            position: relative;
+                a{
+                    img{
+                        width: 7.5rem;
+                        @include hd-desktop-breakpoint-start{
+                            width:9.375rem ;
+                        }
+                    }
+                }
+            }
+            &-list{
+                display: none;
+                gap: size(regular);
+                list-style: none;
+                font-size: font(medium);
+                    &-item{
+                        a{
+                            text-decoration: none;
+                            color: $dark-text-color;
+                        }
+                    }
+                    #nav-item-live-class::before,
+                    #nav-item-study-material::before{
+                        position: absolute;
+                        padding-bottom: size(mini);
+                        bottom: 60%;
+                        display: block;
+                        font-size: font(tiny);
+                        letter-spacing: size(mini);
+                        content: "FREE";
+                    }
+                @include laptop-breakpoint-start{
+                    display: flex;
+                }
+                @include hd-desktop-breakpoint-start{
+                    font-size: font(large);
+                }
+
+            }
+            &-cta{
+                position: relative;
+                height: size(large);
+                display: flex;
+                gap: size(small);
+                &-singup{
+                    cursor: pointer;
+                    background-color: $dark-blue-color;
+                    border-radius: size(regular);
+                    display: flex;
+                    align-items: center;
+                    a{
+                        text-decoration: none;
+                        p{
+                        font-size: font(small);
+                        width: size(xxxl);
+                        text-align: center;
+                        font-weight: 500;
+                        color: $light-text-color;
+                        @include hd-desktop-breakpoint-start{
+                            width: size(huge);
+                            font-size: font(medium);
+                            }
+                        }
+                    }
+                }
+                &-call{
+                    cursor:pointer;
+                    background-color: $dark-blue-color;
+                    border-radius: size(xl);
+                    display: flex;
+                    align-items: center;
+                    @include laptop-breakpoint-start{
+                        &::before{
+                            padding: 0 size(small);
+                            content: "Call";
+                            color: $light-text-color;
+                        }
+                        a{
+                            display: none;
+                        }
+                    }
+                    @include hd-desktop-breakpoint-start{
+                    &::before{
+                        font-size: font(medium);
+                    padding: 0 size(medium);
+                    }
+                    }
+                }
+            }
+        }
+        &-burger-menu-btn{
+            span{
+                cursor: pointer;
+                // position: relative;
+                display: block;
+                width: size(medium);
+                height: 1.5*size(micro);
+                background-color: black;
+                // border-radius: size(tiny);
+                transition: ease 300ms;
+                &:not(:last-child){
+                    margin-bottom:size(mini);
+                }
+            }
+            &-open{
+                span{
+                    &:first-child{
+                        transform: rotate(45deg);
+                        transform-origin: top left;
+                    }
+                    &:nth-child(2){
+                        width: 25%;
+                        opacity: 0;
+                    }
+                    &:last-child{
+                        transform: rotate(-45deg);
+                        transform-origin: bottom left;
+                    }
+                }
+            }
+            @include laptop-breakpoint-start{     //hide burger menu for large device
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../variable_and_mixins/mixins';
+@import '../variable_and_mixins/variables';
+
+@function size($size-name){
+    @return map-get($rem-size , $size-name);
+}
+
+@function font($size-name){
+    @return map-get($font-size , $size-name);
+}
+
+.burger-menu-box{
+    position: absolute;
+    height: 98vh;
+    overflow-x: hidden;
+    width: 100vw;
+    @include laptop-breakpoint-start{
+        display: none;
+    }
+    .burger-menu-list{
+        z-index: 0;
+        position: relative;
+        position: absolute;
+        // top: -3rem;
+        width: inherit;
+        height: inherit;
+        background-color: $dark-blue-color;
+        padding-top: size(medium);
+        transition: ease-in-out 300ms;
+        left: 200vw;
+        overflow: hidden;
+        &-open{
+            left: 0;
+            z-index: 1;
+        }
+        &-item{
+            width: 95%;
+            padding: size(regular);
+            border-bottom: solid $light-grey-color size(px);
+            a{
+                text-decoration: none;
+                color: $light-text-color;
+                font-size: font(small);
+            }
+        }
+        &-free-demo{
+            position: relative;
+            padding-top: size(medium);
+            display: grid;
+            place-items: center;
+            a{
+                color: $dark-text-color;
+                background-color: $chrome-yellow-color;
+                text-decoration: none;
+                padding: size(regular);
+                border-radius: 25px;
+            }
+        }
+    }
+}

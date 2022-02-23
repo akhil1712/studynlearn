@@ -1,0 +1,87 @@
+$break-point:(
+    "watch-start"   :       0rem,
+                            //watches
+    "mobile-start"  :       21.875rem,
+                            // mobile
+    "mobile-flip"   :       37.5rem,
+                            //horizontal mobile
+    "tablet-start"  :       49.125rem,
+                            // tablet
+    "laptop-start"  :       64rem,
+                            // laptop
+    "desktop-start" :       90rem,
+                            //desktop
+    "hd-desktop"    :       112.5rem,
+                            //4k
+    );
+
+@mixin watch-breakpoint-start {
+    @media (min-width: map-get($break-point,"watch-start")){
+        @content;
+    }
+}
+@mixin mobile-breakpoint-start {
+    @media (min-width: map-get($break-point,"mobile-start")){
+        @content;
+    }
+}
+@mixin mobile-flip-breakpoint-start {
+    @media (min-width: map-get($break-point,"mobile-flip")){
+        @content;
+    }
+}
+
+@mixin tablet-breakpoint-start {
+    @media (min-width: map-get($break-point,"tablet-start")){
+        @content;
+    }
+}
+
+@mixin laptop-breakpoint-start {
+    @media (min-width: map-get($break-point,"laptop-start")){
+        @content;
+    }
+}
+@mixin desktop-breakpoint-start {
+    @media (min-width: map-get($break-point,"desktop-start")){
+        @content;
+    }
+}
+@mixin hd-desktop-breakpoint-start {
+    @media (min-width: map-get($break-point,"hd-desktop")){
+        @content;
+    }
+}
+
+@mixin breakpoint-min($widht-size:0px){
+    @media(min-width: $widht-size){
+        @content;
+    }
+}
+
+@mixin breakpoint-max($widht-size:0px){
+    @media(max-width: $widht-size){
+        @content;
+    }
+}
+
+// .desktop{
+// //     @include watch-breakpoint {
+// //         background: #ff54ff; // : 0px
+// //     }
+// //     @include mobile-breakpoint {
+// //         background-color: red; // : 240px,
+// //     }
+// //     @include tablet-breakpoint {
+// //         background-color: yellow;// : 768px,
+// //     }
+// //     @include laptop-breakpoint {
+// //         background-color: green;// : 1024px,
+// //     }
+// //     @include desktop-breakpoint {
+// //         background-color: rgb(0, 225, 255);// : 1440px,
+// // //     }
+// //     @include desktop-breakpoint-start {
+// //         background-color: rgb(48, 0, 110);// : 2560px,
+// //     }
+// }

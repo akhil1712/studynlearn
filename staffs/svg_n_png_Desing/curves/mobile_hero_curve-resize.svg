@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="416.71945"
+   height="412.41187"
+   viewBox="0 0 416.71945 412.41187"
+   version="1.1"
+   id="svg19"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11">
+    <linearGradient
+       x1="272.43229"
+       y1="169.04439"
+       x2="179.6333"
+       y2="321.79606"
+       id="gradient_1"
+       gradientTransform="scale(1.0052088,0.99481814)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFEB3B"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#FFC107"
+         id="stop4" />
+    </linearGradient>
+    <path
+       d="M 0,0 H 525 V 525 H 0 Z"
+       id="path_1" />
+    <clipPath
+       id="mask_1">
+      <use
+         xlink:href="#path_1"
+         id="use8"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+  </defs>
+  <g
+     id="svg"
+     transform="translate(-34.577154,-62.93651)">
+    <path
+       d="M 0,0 H 525 V 525 H 0 Z"
+       id="Background"
+       fill="none"
+       fill-rule="evenodd"
+       stroke="none" />
+    <g
+       clip-path="url(#mask_1)"
+       id="g16">
+      <g
+         id="Group-2-Copy"
+         transform="translate(34.57715,62.936523)">
+        <path
+           d="M 394.65,350.521 C 447.242,202.46 402.621,49.8907 294.985,9.74773 187.35,-30.3944 57.4598,57.0908 4.86758,205.151 -47.725,353.213 342.057,498.582 394.65,350.521 Z"
+           id="Ellipse-Copy"
+           fill="url(#gradient_1)"
+           fill-rule="evenodd"
+           stroke="none"
+           style="fill:url(#gradient_1)" />
+      </g>
+    </g>
+  </g>
+</svg>

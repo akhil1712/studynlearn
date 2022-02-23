@@ -1,0 +1,26 @@
+@import 'config';
+// variables
+@import './variable_and_mixins/variables';
+//mixins
+@import './variable_and_mixins/mixins';
+// header section
+@import'./header_section/header';
+// hero section
+@import'./hero_section/hero-section';
+
+@import'./hero_section/dwonload-link';
+
+@import'./banner/banner';
+
+// @function weight($width-name){
+//     @return map-get($width-size , $width-name);
+// }
+
+// @function padding($padding-name){
+//     @return map-get($mar-pad , $padding-name);
+// }
+
+// @function margin($margin-name){
+//     @return map-get($mar-pad , $margin-name);
+// }
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>STDlEarn</title>
+</head>
+<body>
+    <div class="top-curve" style="z-index: -10;">
+        <img src="./staffs/svg_n_png_Desing/curves/mobile_hero_curve-resize.svg" alt="">
+    </div>
+    <header  id="main-header">
+        <div class="header">
+            <nav class="header-nav">
+                <div class="header-nav-logo">
+                    <a id="logo" href="./">
+                        <img src="./staffs/svg_n_png_Desing/logos/STDlEarn_logo_36px.svg" alt="STDlEarn_logo" srcset="">
+                    </a>
+                </div>
+
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item" id="nav-item-live-class" >     <a href="./pages/underDevelopment.html">Live Class     </a></li>
+                    <li class="header-nav-list-item" id="nav-item-courses" >        <a href="./pages/underDevelopment.html">Courses        </a></li>
+                    <li class="header-nav-list-item" id="nav-item-study-material" > <a href="./pages/underDevelopment.html">Study Material </a></li>
+                    <li class="header-nav-list-item" id="nav-item-our-result" >     <a href="./pages/underDevelopment.html">Our Results    </a></li>
+                    <li class="header-nav-list-item" id="nav-item-more" >           <a href="./pages/underDevelopment.html">More           </a></li>
+                </ul>
+
+                <div class="header-nav-cta">
+                    <div class="header-nav-cta-singup">
+                        <a href="./pages/underDevelopment.html" id="nav-singing-btn" >
+                            <p>Sing Up</p>
+                        </a>
+                    </div>
+                    <div class="header-nav-cta-call" id="header-nav-call-btn" onclick="sorryAlert('Call')">
+                        <a href="tel:+" id="nav-call-btn">
+                            <img src="./staffs/svg_n_png_Desing/icons/call.svg" onclick="test(1)" alt="Call">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-burger-menu-btn" id="header-burger-menu-btn" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="burger-menu-box ">
+            <div class="burger-menu-list " id="burger-menu">
+                <div class="burger-menu-list-item" id="burger-menu-item-live-class"    ><a href="./pages/underDevelopment.html">Live Class               </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-courses"       ><a href="./pages/underDevelopment.html">Courses                  </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-maths-for-kit" ><a href="./pages/underDevelopment.html">Maths for Kids           </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-english-spoken"><a href="./pages/underDevelopment.html">Reading & Spoken English </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-study-material"><a href="./pages/underDevelopment.html">Study Material           </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-our-result"    ><a href="./pages/underDevelopment.html">Our Results              </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-lets-chat"     ><a href="./pages/underDevelopment.html">Lets Chat                </a></div>
+                <div class="burger-menu-list-item" id="burger-menu-item-more"          ><a href="./pages/underDevelopment.html">More . .                 </a></div>
+                <div class="burger-menu-list-free-demo">
+                    <a href="./pages/underDevelopment.html" id="burger-menu-free-demo">Book FREE Online Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-box ">
+            <div class="hero-box-heading"><h1>work hard &<br>study smart with<br><i>STDlEarn.</i></h1></div>
+            
+            <div class="hero-box-image">
+                <picture>
+                    <source media="(min-width : 90rem)" srcset="./staffs/Home_hero/final/girl-studying-500px.png">
+                    <img src="./staffs/Home_hero/final/girl-studying-300px.png" alt="girl-with-laptop">
+                </picture>
+           </div>
+        
+            <div class="hero-box-btn">
+                <a href="./pages/underDevelopment.html" class="hero-box-btn-free-live-class btn" >Free Live Classes</a>
+                <a href="./pages/underDevelopment.html" class="hero-box-btn-book-demo-class btn" >Book Demo Class</a>
+            </div>
+        </div>
+    </section>
+    <div class="download-link">
+        <div class="download-link-icons">
+            <br>
+                <a href="./pages/underDevelopment.html">
+                    <img src="./staffs/svg_n_png_Desing/icons/play-store.svg" alt="play Store Icon">
+                </a>
+                <a href="./pages/underDevelopment.html">
+                    <img src="./staffs/svg_n_png_Desing/icons/app-store.svg" alt="App Store Icon">
+                </a>
+        </div>
+        <div class="download-link-form">
+            <form action="GET">
+                <label for="">get link in sms to download the app NOW</label>
+                <br>
+                <input type="tel" name="Enter Mobile Number" value="Mobile Number" id="mobile-number-input">
+                <input type="submit" value="GET LINK" id="mobile-submit-btn">
+            </form>
+        </div>
+    </div>
+    <section class="banner">
+        
+        <div class="banner-box">
+        
+            <div class="banner-box-toggle-left">
+                <picture>
+                    <source media="(min-width: 1023px)">
+                    <img src="./staffs/svg_n_png_Desing/icons/arrow-left.svg"  onclick="showPreviousBanner()">
+                </picture>
+            </div>
+            <section class="banner-box-image-section">
+                <ul class="banner-box-image-section-list display-none" id="banner-img-list">
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li1"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/1500_jee_advance.png  "> <img src="./banner/small/1500_jee_advance_mobile.png"   alt="Discount and Offer Banner "></picture></li>
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li2"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/3X-better.png         "> <img src="./banner/small/3x-better-mobile.png"          alt="Discount and Offer Banner "></picture></li>
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li3"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/6-upcoming.png        "> <img src="./banner/small/6-upcoming-mobile.png"         alt="Discount and Offer Banner "></picture></li>
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li4"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/pie_withoutpie.png    "> <img src="./banner/small/pie_withoutpie-mobile.png"     alt="Discount and Offer Banner "></picture></li>
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li5"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/ye-hue-baat-yellow.png"> <img src="./banner/small/ye_hue_baat_yellow_mobile.png" alt="Discount and Offer Banner "></picture></li>
+                    <li class="banner-box-image-section-list-item" id="mobile-banner-li6"><picture><source media="(min-width: 37.12rem)" srcset="./banner/large/1500_jee_advance.png  "> <img src="./banner/small/1500_jee_advance_mobile.png"   alt="Discount and Offer Banner "></picture></li>
+                </ul>
+            </section>
+        
+            <div class="banner-box-toggle-right">
+                <picture>
+                    <source media="(min-width: 1023px)">
+                    <img src="./staffs/svg_n_png_Desing/icons/arrow-right.svg" alt="arrow-right" onclick="showNextBanner(1)">
+                </picture>
+            </div>
+        </div>
+        
+        <div class="banner-slider-indicator">
+            <span class="banner-dot  active-dot" id="banner-slider-dot-0" onclick="liveBanner(0)" ></span>
+            <span class="banner-dot"             id="banner-slider-dot-1" onclick="liveBanner(1)" ></span>
+            <span class="banner-dot"             id="banner-slider-dot-2" onclick="liveBanner(2)" ></span>
+            <span class="banner-dot"             id="banner-slider-dot-3" onclick="liveBanner(3)" ></span>
+            <span class="banner-dot"             id="banner-slider-dot-4" onclick="liveBanner(4)" ></span>
+            <span class="banner-dot"></span>
+        </div>
+    </section>
+<script src="./js/main.js"></script>
+<script src="./js/slider.js"></script>
+<script>
+    sorryAlert = (action)=>{
+        alert(`Sorry you do ${action} now`)
+    }
+</script>
+</body>
+</html>

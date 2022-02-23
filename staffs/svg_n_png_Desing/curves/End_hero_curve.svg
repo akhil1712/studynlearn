@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="3499px" height="2708px" viewBox="0 0 3499 2708" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5756217" y1="0.0026254281" x2="0.48093966" y2="1.0125307" id="gradient_1">
+      <stop offset="0%" stop-color="#FFEB3B" />
+      <stop offset="40.778465%" stop-color="#FFAA00" />
+      <stop offset="41.242744%" stop-color="#FF9D00" />
+      <stop offset="41.84308%" stop-color="#FFAA00" />
+      <stop offset="50%" stop-color="#FFC006" />
+      <stop offset="100%" stop-color="#FFEB3B" />
+    </linearGradient>
+  </defs>
+  <g id="Group-136">
+    <path d="M255.517 953.603C396.635 426.942 1179.85 179.209 2004.88 400.274C2829.9 621.339 3384.32 1227.49 3243.2 1754.15C3102.08 2280.81 2318.87 2528.54 1493.84 2307.48C668.816 2086.41 114.399 1480.26 255.517 953.603Z" id="Ellipse-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

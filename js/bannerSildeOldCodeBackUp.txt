@@ -1,0 +1,27 @@
+// banner Slider //     // banner Slider //     // banner Slider //     // banner Slider //
+////////////////////  old silde code for only slide  //////////////////////
+// var i = 0;
+
+// bannerAnimate = ()=>{
+//     bannerSlide.style.transition = `ease 300ms`;
+    
+//     var timeOut = 3000;
+    
+//     if(i == bannerSize){
+//         i = 0;
+//         timeOut = 2000/4;
+//     bannerSlide.style.transition = `ease 0ms`;
+//     }
+    
+//     var j = `${i}` * -100 + `%` ;
+//     bannerSlide.style.transform = `translatex(${j})`;
+    
+//     if(i<bannerSize){
+//         i++;
+//         setTimeout(()=>{
+//             bannerAnimate()
+//         },timeOut)
+//     }
+//     console.log(j)
+// }
+/////////////////////////////////////////////////////////////

@@ -1,0 +1,61 @@
+@import '../variable_and_mixins/variables';
+@import '../variable_and_mixins/mixins';
+
+@function size($size-name){
+    @return map-get($rem-size , $size-name);
+}
+
+@function font($size-name){
+    @return map-get($font-size , $size-name);
+}
+.download-link{
+    position: relative;
+    margin: 0 auto;
+    padding: size(medium) size(regular);
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    @include desktop-breakpoint-start{
+        max-width: 90rem;
+        font-size: font(medium);
+    }
+    &-icons{
+        position: relative;
+        &::before{
+            content: "attend FREE classes today! Download App NOW.";
+            text-transform: capitalize;
+        }
+        img{
+            margin-top: 0.5rem;
+        width: 5rem;
+        }
+    }
+    &-form{
+        form{
+            display: none;
+            @include mobile-flip-breakpoint-start{
+                display: block;
+                line-height: 1.5;
+                min-width: fit-content;
+            }
+            @include desktop-breakpoint-start{
+            }
+            label{
+                text-transform: capitalize;
+            }
+            input{
+                text-align: center;
+                border: none;
+                padding: size(mini);
+            }
+            #mobile-number-input{
+                border: solid black font(px);
+                    
+                }
+            #mobile-submit-btn{
+                color: $light-text-color;
+                background-color: $dark-blue-color;
+            }
+        }
+    }
+}
